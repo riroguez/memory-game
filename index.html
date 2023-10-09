@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="game-bg">
+        <div class="game-content">
+            <div class="game-square">
+                <h1>Juego de Memoria</h1>
+
+                <table class="game-grid">
+                    <tr>
+                        <td><button id="0" class="game-button"></button></td>
+                        <td><button id="1" class="game-button"></button></td>
+                        <td><button id="2" class="game-button"></button></td>
+                        <td><button id="3" class="game-button"></button></td>
+                        <td><button id="4" class="game-button"></button></td>
+                        <td><button id="5" class="game-button"></button></td>
+                        <td><button id="6" class="game-button"></button></td>
+                        <td><button id="7" class="game-button"></button></td>
+                        <td><button id="8" class="game-button"></button></td>
+                        <td><button id="9" class="game-button"></button></td>
+                        <td><button id="10" class="game-button"></button></td>
+                        <td><button id="11" class="game-button"></button></td>
+                        <td><button id="12" class="game-button"></button></td>
+                        <td><button id="13" class="game-button"></button></td>
+                        <td><button id="14" class="game-button"></button></td>
+                        <td><button id="15" class="game-button"></button></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="game-info">
+                <div id="successes" class="estadisticas">Aciertos: 0</div>
+                <div id="time" class="estadisticas">Tiempo: 0</div>
+                <div id="movements" class="estadisticas">Movimientos: 0</div>
+            </div>
+        </div>
+        <a href="/">Volver a Jugar</a>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright - Game by Geovanny Rios <span id="gameDate"></span></p>
+    </footer>
+
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>

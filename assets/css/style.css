@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+    font-family: 'Young Serif', serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #101084;
+    width: min(95%, 47.5rem);
+    margin: 0 auto;
+    color: white;
+}
+@media (min-width: 768px) {
+    body {
+        width: min(95%, 80rem);
+    }
+}
+.game-bg a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.442);
+    padding: 1rem 3rem;
+    color: white;
+    margin-top: 2rem;
+    border-radius: .5rem;
+}
+.game-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+@media (min-width:768px) {
+    .game-content {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.game-grid tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+.game-button {
+    border: none;
+    display: grid;
+    place-items: center;
+    width: 10rem;
+    height: 10rem;
+    font-size: 4.5rem;
+    color: white;
+}
+.game-button:hover {
+    cursor: pointer;
+}
+.game-square {
+    order: 1;
+    background-color: rgba(256,256,256, .5);
+    border-radius: 1rem;
+}
+@media (min-width: 768px) {
+    .game-square {
+        order: 0;
+    }
+}
+.game-square h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+.game-info {
+    width: 100%;
+    background-color: rgba(256,256,256, .5);
+}
+.game-info {
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+    .game-info {
+        padding: 2rem;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+        margin-bottom: 0;
+    }
+}
+
+.estadisticas {
+    border: 1px solid rgba(256,256,256, .8);
+    color: white;
+    padding: 3.5rem 3rem;
+    font-size: 2.2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.estadisticas:last-child{
+    margin-bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10rem;
+    color: #d0d0d0;
+}
